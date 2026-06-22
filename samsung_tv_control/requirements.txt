@@ -1,0 +1,11 @@
+# Core web service
+fastapi>=0.110
+uvicorn[standard]>=0.29
+
+# Modern Samsung Tizen TVs (2016+) — WebSocket protocol.
+# Used by the "ws" backend. Includes websocket-client.
+samsungtvws>=2.6.0
+
+# Legacy Samsung TVs (e.g. 2012 E-series UA46ES6200) — port 55000.
+# Used by the "legacy" backend.
+samsungctl>=0.7.1

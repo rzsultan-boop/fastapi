@@ -1,0 +1,9 @@
+# Secrets and runtime state — never commit these
+.env
+tv_token.txt
+*.token
+
+# Python
+.venv/
+__pycache__/
+*.pyc

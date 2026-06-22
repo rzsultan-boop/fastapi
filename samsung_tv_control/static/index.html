@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="theme-color" content="#0b0b0c" />
+  <title>TV Volume</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    body {
+      margin: 0; min-height: 100vh; background: #0b0b0c; color: #f2f2f2;
+      font-family: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
+      display: flex; flex-direction: column; align-items: center;
+      padding: 24px 16px 40px; gap: 18px;
+    }
+    h1 { font-size: 20px; font-weight: 600; margin: 4px 0 2px; }
+    .sub { font-size: 13px; color: #8a8a8f; margin-bottom: 8px; }
+    .grid { width: 100%; max-width: 440px; display: grid; gap: 14px; }
+    button {
+      border: none; border-radius: 18px; padding: 26px; font-size: 22px;
+      font-weight: 600; color: #fff; cursor: pointer; transition: transform .05s, filter .15s;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+    }
+    button:active { transform: scale(.97); }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .down  { background: #2563eb; }
+    .up    { background: #3f3f46; }
+    .panic { background: #dc2626; font-size: 24px; padding: 34px; }
+    .mute  { background: #7c3aed; }
+    .power { background: #18181b; border: 1px solid #3f3f46; font-size: 18px; padding: 18px; }
+    .toast {
+      position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%);
+      background: #18181b; border: 1px solid #3f3f46; color: #f2f2f2;
+      padding: 12px 18px; border-radius: 12px; font-size: 14px; opacity: 0;
+      transition: opacity .2s; pointer-events: none; max-width: 90vw; text-align: center;
+    }
+    .toast.show { opacity: 1; }
+    .toast.err { border-color: #dc2626; color: #fca5a5; }
+    .keyrow { width: 100%; max-width: 440px; display: flex; gap: 8px; font-size: 13px; align-items: center; }
+    .keyrow input { flex: 1; background: #18181b; border: 1px solid #3f3f46; color: #f2f2f2; padding: 10px; border-radius: 10px; }
+    .keyrow button { padding: 10px 14px; font-size: 13px; border-radius: 10px; background: #3f3f46; }
+    .small { font-size: 12px; color: #6b6b70; }
+  </style>
+</head>
+<body>
+  <h1>📺 TV Volume</h1>
+  <div class="sub" id="status">checking…</div>
+
+  <div class="grid">
+    <button class="panic" onclick="call('/api/volume/panic')">🔇 Turn it DOWN (−5)</button>
+    <div class="row">
+      <button class="down" onclick="call('/api/volume/down')">➖ Vol −</button>
+      <button class="up"   onclick="call('/api/volume/up')">➕ Vol +</button>
+    </div>
+    <button class="mute" onclick="call('/api/mute')">🔕 Mute / Unmute</button>
+    <button class="power" onclick="call('/api/power')">⏻ Power</button>
+  </div>
+
+  <div class="keyrow">
+    <input id="apikey" type="password" placeholder="API key (if set on server)" />
+    <button onclick="saveKey()">Save</button>
+  </div>
+  <div class="small">Key is stored only in this browser.</div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // Pull ?key= from the URL once, persist it, then clean the URL.
+    const url = new URL(location.href);
+    const urlKey = url.searchParams.get("key");
+    if (urlKey) { localStorage.setItem("tvKey", urlKey); history.replaceState({}, "", location.pathname); }
+    document.getElementById("apikey").value = localStorage.getItem("tvKey") || "";
+
+    function saveKey() {
+      localStorage.setItem("tvKey", document.getElementById("apikey").value.trim());
+      toast("Saved");
+    }
+
+    let toastTimer;
+    function toast(msg, isErr) {
+      const t = document.getElementById("toast");
+      t.textContent = msg;
+      t.className = "toast show" + (isErr ? " err" : "");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => (t.className = "toast"), 1800);
+    }
+
+    async function call(path) {
+      const key = localStorage.getItem("tvKey") || "";
+      try {
+        const res = await fetch(path, { method: "POST", headers: key ? { "X-API-Key": key } : {} });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) { toast(data.detail || ("Error " + res.status), true); return; }
+        toast("✓ done");
+        if (navigator.vibrate) navigator.vibrate(15);
+      } catch (e) {
+        toast("Network error — is the server reachable?", true);
+      }
+    }
+
+    (async function checkHealth() {
+      try {
+        const res = await fetch("/api/health");
+        const d = await res.json();
+        document.getElementById("status").textContent =
+          `connected to ${d.tv_host} (${d.method})` + (d.auth_required ? " · 🔒" : "");
+      } catch {
+        document.getElementById("status").textContent = "server unreachable";
+      }
+    })();
+  </script>
+</body>
+</html>
