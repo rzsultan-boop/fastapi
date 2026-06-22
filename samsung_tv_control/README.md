@@ -57,7 +57,35 @@ connected" in Smart View). Start with `TV_METHOD=ws`.
 
 ---
 
-## Setup
+## Quick start on a Mac (recommended for most people)
+
+If a MacBook on the same Wi-Fi as the TV will be your always-on host:
+
+1. In Finder, open the `samsung_tv_control` folder and **double-click
+   `run-mac.command`**. (First time: right-click → Open to get past Gatekeeper.)
+2. The first run installs everything, then creates a `.env` and stops. Open it
+   with `open -e .env`, set **`TV_HOST`** (your TV's IP) and an **`API_KEY`**,
+   save, and double-click `run-mac.command` again.
+3. Leave that Terminal window open. The script uses `caffeinate` so the Mac
+   won't idle-sleep the server while it runs.
+4. Control it:
+   - On the Mac: <http://localhost:8000/>
+   - From your phone on the same Wi-Fi: `http://<mac-ip>:8000/` (the script
+     prints the address). macOS may ask to **allow incoming connections** —
+     click Allow.
+
+> macOS sleep: the server only answers while the Mac is awake. `caffeinate`
+> stops *idle* sleep, but **closing the lid still sleeps the Mac.** To control
+> the TV with the lid closed, keep it plugged in and either run with the lid
+> open, or use a tool like Amphetamine / `caffeinate -s`. When the Mac is fully
+> asleep or off, control stops — that's expected.
+
+For phone access from *outside* the house, add Tailscale — see
+[Access from afar](#access-from-afar).
+
+---
+
+## Setup (manual / non-Mac)
 
 On the home device:
 
