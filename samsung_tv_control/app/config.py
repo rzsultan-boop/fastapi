@@ -53,8 +53,18 @@ def get_settings() -> Settings:
         )
 
     host = os.environ.get("TV_HOST", "").strip()
+    if not host and method == "ws":
+        # No IP configured: try to find the TV on the local network.
+        from .discover import discover_one
+
+        found = discover_one()
+        if found:
+            host = found.host
     if not host:
-        raise ValueError("TV_HOST is required (your TV's IP address).")
+        raise ValueError(
+            "TV_HOST is required and no TV was auto-discovered. "
+            "Set TV_HOST to your TV's IP, and make sure the TV is on this Wi-Fi."
+        )
 
     port = int(os.environ.get("TV_PORT", _DEFAULT_PORTS[method]))
 

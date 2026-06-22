@@ -57,22 +57,31 @@ connected" in Smart View). Start with `TV_METHOD=ws`.
 
 ---
 
-## Quick start on a Mac (recommended for most people)
+## Quick start on a Mac (one command)
 
-If a MacBook on the same Wi-Fi as the TV will be your always-on host:
+If a MacBook on the same Wi-Fi as the TV is your host, just run this once from
+the `samsung_tv_control` folder:
 
-1. In Finder, open the `samsung_tv_control` folder and **double-click
-   `run-mac.command`**. (First time: right-click → Open to get past Gatekeeper.)
-2. The first run installs everything, then creates a `.env` and stops. Open it
-   with `open -e .env`, set **`TV_HOST`** (your TV's IP) and an **`API_KEY`**,
-   save, and double-click `run-mac.command` again.
-3. Leave that Terminal window open. The script uses `caffeinate` so the Mac
-   won't idle-sleep the server while it runs.
-4. Control it:
-   - On the Mac: <http://localhost:8000/>
-   - From your phone on the same Wi-Fi: `http://<mac-ip>:8000/` (the script
-     prints the address). macOS may ask to **allow incoming connections** —
-     click Allow.
+```bash
+bash install-mac.sh
+```
+
+It does everything itself: installs dependencies, **auto-finds the TV** on your
+network, generates the API key, writes the config, installs an auto-start
+service (runs at every login, restarts on crash, kept awake with `caffeinate`),
+and opens the control page with the key pre-filled.
+
+The **only** manual step is accepting the one-time "allow HomeVolumeControl"
+popup that appears **on the TV** the first time you press a button (Samsung
+requires this; it can't be done remotely).
+
+Control it afterwards:
+- On the Mac: <http://localhost:8000/>
+- From your phone on the same Wi-Fi: `http://<mac-ip>:8000/` (the installer
+  prints the address; macOS may ask to **allow incoming connections** → Allow).
+
+> Prefer not to auto-start? Double-click `run-mac.command` to run it only while
+> that Terminal window is open.
 
 > macOS sleep: the server only answers while the Mac is awake. `caffeinate`
 > stops *idle* sleep, but **closing the lid still sleeps the Mac.** To control
