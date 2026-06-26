@@ -103,9 +103,10 @@ employees' LinkedIn/CV/skills + Leumi job postings (people & job ads name the ex
 - **Org-gaps pass** `wf_a425e9bb-3c2` (w2ub8bd4z): **partial success** — confirmed findings folded into
   use-case doc §5/§5b (Tech Division split → Nir Omer + Shauli Bar Or; Skolnik → core-banking
   subsidiary CEO; Temenos confirmed for *Pepper* only; SAS credit-rating **refuted**).
-- **Systems-mining pass (PRIORITY)** `wf_a3537b79-88f` (w7varnj04): **FAILED — 0 results** (killed during
-  fetch by the session limit). **MUST RE-RUN after 7:40pm UTC.** This is the top open item — the
-  commercial core, LOS, credit-rating engine, and data-warehouse vendors are still unknown.
+- **Systems-mining pass (PRIORITY)** `wf_a3537b79-88f` (w7varnj04): FAILED — 0 results (session limit).
+  **→ RE-LAUNCHED after reset as `wf_bf48d0da-599` (task wd06d1r8x), ~19:50 UTC.** When it lands, fold
+  confirmed SYSTEMS into use-case doc §5b + `make_flow.py`, commit + push. Top open item: commercial
+  core, the new future-core subsidiary stack, LOS, credit-rating engine, data warehouse.
 
 ### TO RESUME (after 7:40pm UTC reset)
 Re-launch the systems-mining mission (employee-profile + job-ad mining for named systems). Spec is in
