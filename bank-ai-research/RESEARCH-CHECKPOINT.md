@@ -4,7 +4,14 @@
 > **[HIGH]** multi-source verified · **[MED]** single/soft source · **[GAP]** not found.
 > Tagging for the loan use-case: **[CONFIRMED-LEUMI]** / **[PEER-BANK TEMPLATE]** / **[GENERIC ASSUMPTION]**.
 
-Last updated: 2026-06-26. Status: pass-2 workflow (loan-origination peer-bank → Leumi map) **in progress**; resume run ID `wf_c9f38ba9-160`.
+Last updated: 2026-06-26. Status: **both passes COMPLETE.** Full Leumi loan-origination use-case written to `LEUMI-loan-origination-usecase.md` (this folder).
+
+**Pass-2 added (Leumi org chain, [CONFIRMED-LEUMI / HIGH]):**
+- **CRO** = Head of Risk Management Division = **Ronen Mori** (רונן מורי), since Jan 2023 (prev: Liat Shov 2020–23; Bosmat Ben-Tzvi before).
+- **Head of Corporate/Commercial Credit** = Head of Business/"Corporate" Division = **Liat Shov** (ליאת שוב), since Jan 2023 (prev: Ronen Agassi → left to CEO Migdal).
+- **CIO** = Technology Division = **Chaim Skolnik** (חיים שקולניק), named Dec 2020 — 2026 tenure unconfirmed [MED].
+- Gaps still open: Head of Compliance/AML, CISO, current CIO re-confirmation, and which LOS/rating/limits vendors Leumi actually runs (only Salesforce CRM + Actimize fraud confirmed).
+- System/process template (nCino, Moody's CreditLens, OCC handbook, 12 CFR Part 30 App. D) = [PEER-BANK TEMPLATE], not Leumi-confirmed.
 
 ---
 
