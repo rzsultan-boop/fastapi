@@ -130,26 +130,41 @@ systems**; **Eyal Efrat** (איל אפרת), a prior tech-division head, became 
 
 ## 5b. Systems — confirmed status for Leumi (PRIORITY)
 
-| Category | Leumi status | Tag |
-|---|---|---|
-| CRM | **Salesforce** | [CONFIRMED-LEUMI] |
-| AML / fraud | **NICE Actimize** (fraud / transaction-monitoring; "AML" framing unproven) | [CONFIRMED-LEUMI] |
-| Core banking | **Temenos** — confirmed **only for the *Pepper* digital bank** (+ VMware cloud, 2017); **NOT** confirmed for the main commercial core. Leumi is building a **future core via a new wholly-owned subsidiary** (Skolnik, CEO). | [CONFIRMED-LEUMI, scoped] |
-| Credit rating / scoring | **SAS — REFUTED** (0-3; the SAS case-study attribution did not hold). No engine confirmed. | [NOT FOUND] |
-| Loan-origination (LOS) | none confirmed (templates: nCino / Finastra) | [NOT FOUND] |
-| Limits & collateral | none confirmed | [NOT FOUND] |
-| Data warehouse / BI | none confirmed (Teradata/Oracle/SAS unverified) | [NOT FOUND] |
+**Two layers emerged. The cloud/DevOps/open-banking layer is now well-evidenced; the commercial-core
+"system of record" layer that your wedge most needs is still NOT FOUND despite targeted mining.**
 
-> ⚠️ **The priority systems-mining pass (employee-profile + job-ad mining) returned no results — it was
-> killed by a session limit (resets 7:40pm UTC). Re-run needed: run ID `wf_a3537b79-88f`.** The main
-> commercial-core, LOS, rating engine, and data-warehouse vendors are still open.
+### ✅ Confirmed systems
+| Category | Leumi system | Evidence | Tag |
+|---|---|---|---|
+| Cloud provider | **AWS** | AWS case study; whole stack on AWS | [CONFIRMED-LEUMI / HIGH] |
+| Containers / DevOps | **Amazon EKS + EKS Anywhere** (hybrid on-prem+cloud Kubernetes); **Amazon Aurora** for some workloads | AWS case study: migrated 16 on-prem apps to EKS Anywhere in 5 months | [CONFIRMED-LEUMI / HIGH] |
+| Cloud delivery partner | **AllCloud** (AWS Premier partner) — "Solutions Factory" / EKS Environment-as-a-Service, AWS Service Catalog, Cloud Center of Excellence (CCoE mgr: **Moti Levi**) | AllCloud + AWS case studies | [CONFIRMED-LEUMI / HIGH] |
+| Open banking | **FinTeka** marketplace (2022), built by **GFT** on serverless AWS (GFT Open API Framework, API Gateway, AWS WAF, Kinesis Firehose) | GFT success story; Open Banking Expo | [CONFIRMED-LEUMI / HIGH] |
+| Digital-bank core | **Temenos** on **VMware** — **Pepper digital bank only**, 2017; NOT the commercial core | Temenos/VMware PR; Finextra | [CONFIRMED-LEUMI / scoped] |
+| Future core | **Cloud-native core built via a wholly-owned subsidiary** (CEO ex-CIO Chaim Skolnik, announced Dec 2023, pending BoI approval). ⚠️ subsidiary **name + stack NOT found** | Calcalist; Maariv | [CONFIRMED-LEUMI / scoped] |
+| CRM | **Salesforce** (from earlier pass) | pc.co.il/news/191141 | [CONFIRMED-LEUMI] |
+| AML / fraud | **NICE Actimize** (fraud/monitoring; from earlier pass) | finextra 15191 | [CONFIRMED-LEUMI] |
+
+### ❌ Still NOT FOUND (the system-of-record layer — top open items)
+| Category | Status |
+|---|---|
+| **Main commercial core banking** | NOT FOUND (distinct from Pepper/Temenos; likely legacy mainframe being replaced by the new subsidiary) |
+| **Loan-origination / credit system (מערכת אשראי)** | NOT FOUND |
+| **Credit rating / scoring engine** | NOT FOUND — **SAS refuted** (0-3); no Moody's/FICO evidence |
+| **Enterprise data warehouse / BI** | NOT FOUND — **Amazon Redshift 150TB claim refuted** (0-3); Teradata/Snowflake/Databricks unverified |
+| Limits & collateral, ECM | NOT FOUND |
+
+> **Honest takeaway for the pitch:** we have Leumi's **modern cloud/AI-infrastructure layer** (AWS, EKS,
+> AllCloud, GFT/open-banking) cold — strong if your wedge is cloud/AI/data-platform-adjacent. The
+> **legacy systems of record** (core, credit, rating, warehouse) are deliberately unpublished and
+> survived no source — best obtained via a warm conversation or a Leumi insider, not open research.
 
 ## 6. Open questions / next research
-- **[PRIORITY] Re-run the systems-mining pass** after the 7:40pm-UTC session-limit reset (mine
-  current/former Leumi employee LinkedIn skills + job ads for named systems).
-- Confirm **commercial core-banking** platform (vs Temenos-for-Pepper) and the **future-core subsidiary**'s stack.
-- Confirm **CDO Tal Homsky** against a current periodic report; verify **Compliance/AML head (Dr. Nir
-  Yamin?)** and **CISO** leads.
+- **Name + stack of the new core-banking subsidiary** (Skolnik's company) — likely AWS-hosted given the
+  rest of the stack; vendor (Thought Machine / Mambu / Temenos?) unknown.
+- **Current main commercial core** (legacy mainframe/COBOL vs package) — vendor unknown.
+- **מערכת אשראי / rating engine / data-warehouse** products — none survived verification.
+- Verify **CDO Tal Homsky** vs a current periodic report; **Compliance/AML head (Dr. Nir Yamin?)** + **CISO** leads.
 
 ---
 
