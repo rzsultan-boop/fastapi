@@ -94,19 +94,22 @@ Each step to be annotated with: system (tagged template vs confirmed) + Leumi ro
 - `loan-flow.png` / `loan-flow.svg` / `loan-flow.html` — rendered flow diagram
 - `make_flow.py` — diagram generator (re-run: `python3 bank-ai-research/make_flow.py`, then headless-chromium screenshot)
 
-## PENDING / IN-FLIGHT — gap research (recover if window closed mid-run)
-Run ID `wf_a425e9bb-3c2` (task w2ub8bd4z), launched 2026-06-26. Resumable same-session via
-`Workflow({name:"deep-research", resumeFromRunId:"wf_a425e9bb-3c2"})`; if a NEW session, just re-run a
-deep-research pass on the open gaps below. **When results land: fold confirmed names/systems into
-`LEUMI-loan-origination-usecase.md` AND the diagram (`make_flow.py`), then commit + push.**
+## PRIORITY NOTE (per user, 2026-06-26)
+**SYSTEMS matter more than personnel names** for the Leumi pitch — the systems are what our wedge/tech
+plugs into. Personnel names are secondary. Technique to find systems: mine current/former Leumi
+employees' LinkedIn/CV/skills + Leumi job postings (people & job ads name the exact systems).
 
-Open gaps being researched:
-1. Current (2026) Leumi **CIO / Head of Technology** — is Chaim Skolnik still in seat or replaced?
-2. Leumi **Head of Compliance & AML** (name) — currently `[GAP]` in the diagram.
-3. Leumi **CISO / Head of Infosec** (name).
-4. Confirm **Tal Homsky / CDO** against a current source + where the data function sits.
-5. Which **LOS / credit-rating / limits / core-banking** vendors Leumi actually runs (nCino? Finastra?
-   Temenos? FIS? Moody's? in-house?) — only Salesforce CRM + Actimize confirmed so far.
+## PENDING / IN-FLIGHT — two passes (recover if window closed mid-run)
+**When EITHER lands: fold confirmed SYSTEMS (priority) + any names into `LEUMI-loan-origination-usecase.md`
+AND the diagram (`make_flow.py`), then commit + push immediately.**
+
+- **Systems-mining (PRIORITY)** — run ID `wf_a3537b79-88f` (task w7varnj04). Reverse-engineers Leumi's
+  actual stack (core banking, LOS, credit-rating, AML, data warehouse/BI, middleware, cloud, ECM) from
+  employee profiles + job ads. Confirmed so far: Salesforce CRM, NICE Actimize (fraud).
+- **Org gaps** — run ID `wf_a425e9bb-3c2` (task w2ub8bd4z). Open: current CIO (Skolnik?), Head of
+  Compliance/AML, CISO, Tal Homsky/CDO confirmation, + vendor systems.
+- Resume same-session: `Workflow({name:"deep-research", resumeFromRunId:"<id>"})`. New session: re-run a
+  deep-research pass from the specs above.
 
 ## Workflow recovery (completed runs)
 - Pass 1 (Leumi-direct): run ID `wf_6ef6496b-d83` — completed; synthesis stubbed but verified claims recovered.
