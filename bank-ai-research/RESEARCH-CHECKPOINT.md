@@ -88,6 +88,26 @@ Each step to be annotated with: system (tagged template vs confirmed) + Leumi ro
 
 ---
 
-## Workflow recovery
-- Pass 1 (Leumi-direct): run ID `wf_6ef6496b-d83` — completed; synthesis stubbed but verified claims recovered above.
-- Pass 2 (peer-bank template → Leumi map): run ID `wf_c9f38ba9-160` — **in progress**; resumable via `resumeFromRunId`.
+## Deliverables already committed & pushed (durable)
+- `RESEARCH-CHECKPOINT.md` (this file)
+- `LEUMI-loan-origination-usecase.md` — full use-case narrative
+- `loan-flow.png` / `loan-flow.svg` / `loan-flow.html` — rendered flow diagram
+- `make_flow.py` — diagram generator (re-run: `python3 bank-ai-research/make_flow.py`, then headless-chromium screenshot)
+
+## PENDING / IN-FLIGHT — gap research (recover if window closed mid-run)
+Run ID `wf_a425e9bb-3c2` (task w2ub8bd4z), launched 2026-06-26. Resumable same-session via
+`Workflow({name:"deep-research", resumeFromRunId:"wf_a425e9bb-3c2"})`; if a NEW session, just re-run a
+deep-research pass on the open gaps below. **When results land: fold confirmed names/systems into
+`LEUMI-loan-origination-usecase.md` AND the diagram (`make_flow.py`), then commit + push.**
+
+Open gaps being researched:
+1. Current (2026) Leumi **CIO / Head of Technology** — is Chaim Skolnik still in seat or replaced?
+2. Leumi **Head of Compliance & AML** (name) — currently `[GAP]` in the diagram.
+3. Leumi **CISO / Head of Infosec** (name).
+4. Confirm **Tal Homsky / CDO** against a current source + where the data function sits.
+5. Which **LOS / credit-rating / limits / core-banking** vendors Leumi actually runs (nCino? Finastra?
+   Temenos? FIS? Moody's? in-house?) — only Salesforce CRM + Actimize confirmed so far.
+
+## Workflow recovery (completed runs)
+- Pass 1 (Leumi-direct): run ID `wf_6ef6496b-d83` — completed; synthesis stubbed but verified claims recovered.
+- Pass 2 (peer-bank template → Leumi map): run ID `wf_c9f38ba9-160` — completed; names folded into use-case doc.
