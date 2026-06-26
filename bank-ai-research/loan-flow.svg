@@ -1,106 +1,121 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1500" viewBox="0 0 1240 1500" font-family="Segoe UI, Helvetica, Arial, sans-serif">
-<rect width="1240" height="1500" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="1660" viewBox="0 0 1300 1660" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1300" height="1660" fill="#ffffff"/>
 <defs>
 <marker id="fwd" markerWidth="11" markerHeight="11" refX="8" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#7a7a7a"/></marker>
 <marker id="rw" markerWidth="11" markerHeight="11" refX="8" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#D55E00"/></marker>
 <marker id="ov" markerWidth="11" markerHeight="11" refX="8" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#CC79A7"/></marker>
 <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="2.5" flood-color="#111" flood-opacity="0.16"/></filter>
 </defs>
-<text x="70" y="52" font-size="31" font-weight="700" fill="#111111">Bank Leumi — Commercial Loan Origination</text>
-<text x="70" y="82" font-size="17" fill="#444">An iterative, multi-department workflow · roles · people · systems</text>
-<rect x="70" y="108" width="1100" height="64" rx="9" fill="#f6f6f6" stroke="#d8d8d8"/>
-<line x1="88" y1="132" x2="128" y2="132" stroke="#7a7a7a" stroke-width="3" marker-end="url(#fwd)"/>
-<text x="136" y="137" font-size="13.5" fill="#333">forward step</text>
-<line x1="260" y1="132" x2="300" y2="132" stroke="#D55E00" stroke-width="2.4" stroke-dasharray="7 5" marker-end="url(#rw)"/>
-<text x="308" y="137" font-size="13.5" fill="#333">rework loop (R#)</text>
-<line x1="470" y1="132" x2="510" y2="132" stroke="#CC79A7" stroke-width="4" stroke-dasharray="3 4" marker-end="url(#ov)"/>
-<text x="518" y="137" font-size="13.5" fill="#333">concentration override</text>
-<text x="88" y="159" font-size="13" fill="#333">status:</text>
-<text x="144" y="159" font-size="14" font-weight="700" fill="#009E73">✓</text>
-<text x="160" y="159" font-size="12.5" fill="#333">CONFIRMED · LEUMI</text>
-<text x="339.4" y="159" font-size="14" font-weight="700" fill="#E69F00">◐</text>
-<text x="355.4" y="159" font-size="12.5" fill="#333">PARTIAL</text>
-<text x="452.79999999999995" y="159" font-size="14" font-weight="700" fill="#7a7a7a">○</text>
-<text x="468.79999999999995" y="159" font-size="12.5" fill="#333">PEER TEMPLATE</text>
-<text x="615.4" y="159" font-size="14" font-weight="700" fill="#D55E00">!</text>
-<text x="631.4" y="159" font-size="12.5" fill="#333">GAP</text>
-<line x1="370.0" y1="304" x2="370.0" y2="360" stroke="#7a7a7a" stroke-width="3" marker-end="url(#fwd)"/>
-<line x1="370.0" y1="472" x2="370.0" y2="528" stroke="#7a7a7a" stroke-width="3" marker-end="url(#fwd)"/>
-<line x1="370.0" y1="640" x2="370.0" y2="696" stroke="#7a7a7a" stroke-width="3" marker-end="url(#fwd)"/>
-<line x1="370.0" y1="808" x2="370.0" y2="864" stroke="#7a7a7a" stroke-width="3" marker-end="url(#fwd)"/>
-<line x1="370.0" y1="976" x2="370.0" y2="1032" stroke="#7a7a7a" stroke-width="3" marker-end="url(#fwd)"/>
-<line x1="370.0" y1="1144" x2="370.0" y2="1200" stroke="#7a7a7a" stroke-width="3" marker-end="url(#fwd)"/>
-<rect x="70" y="196" width="600" height="108" rx="13" fill="#ffffff" stroke="#0072B2" stroke-width="1.8" filter="url(#sh)"/>
-<rect x="70" y="196" width="10" height="108" rx="5" fill="#0072B2"/>
-<text x="98" y="228" font-size="18" font-weight="700" fill="#111111">1 · Relationship Manager (intake)</text>
-<text x="98" y="255" font-size="15" fill="#1f1f1f">Business / “Corporate” Division — Liat Shov (ליאת שוב)</text>
-<text x="98" y="280" font-size="14" fill="#555">CRM → Salesforce</text>
-<rect x="472.6" y="272" width="183.4" height="23" rx="11.5" fill="#009E73" opacity="0.13"/>
-<text x="564.3000000000001" y="288" font-size="12.5" font-weight="700" fill="#009E73" text-anchor="middle">✓ CONFIRMED · LEUMI</text>
-<rect x="70" y="364" width="600" height="108" rx="13" fill="#ffffff" stroke="#0072B2" stroke-width="1.8" filter="url(#sh)"/>
-<rect x="70" y="364" width="10" height="108" rx="5" fill="#0072B2"/>
-<text x="98" y="396" font-size="18" font-weight="700" fill="#111111">2 · Credit Analyst / Underwriting</text>
-<text x="98" y="423" font-size="15" fill="#1f1f1f">Corporate-credit underwriters (Business Division)</text>
-<text x="98" y="448" font-size="14" fill="#555">Loan-origination + spreading → nCino · Moody’s CreditLens · SAS</text>
-<rect x="507.0" y="440" width="149.0" height="23" rx="11.5" fill="#7a7a7a" opacity="0.13"/>
-<text x="581.5" y="456" font-size="12.5" font-weight="700" fill="#7a7a7a" text-anchor="middle">○ PEER TEMPLATE</text>
-<rect x="70" y="532" width="600" height="108" rx="13" fill="#ffffff" stroke="#E69F00" stroke-width="1.8" filter="url(#sh)"/>
-<rect x="70" y="532" width="10" height="108" rx="5" fill="#E69F00"/>
-<text x="98" y="564" font-size="18" font-weight="700" fill="#111111">3 · Fraud & Financial-Crime (AML / KYC)</text>
-<text x="98" y="591" font-size="15" fill="#1f1f1f">Compliance & AML function — incumbent not named</text>
-<text x="98" y="616" font-size="14" fill="#555">AML / monitoring → NICE Actimize (fraud)</text>
-<rect x="558.6" y="608" width="97.39999999999999" height="23" rx="11.5" fill="#E69F00" opacity="0.13"/>
-<text x="607.3000000000001" y="624" font-size="12.5" font-weight="700" fill="#E69F00" text-anchor="middle">◐ PARTIAL</text>
-<rect x="70" y="700" width="600" height="108" rx="13" fill="#ffffff" stroke="#E69F00" stroke-width="1.8" filter="url(#sh)"/>
-<rect x="70" y="700" width="10" height="108" rx="5" fill="#E69F00"/>
-<text x="98" y="732" font-size="18" font-weight="700" fill="#111111">4 · Legal — collateral · covenants · docs</text>
-<text x="98" y="759" font-size="15" fill="#1f1f1f">Legal / collateral counsel</text>
-<text x="98" y="784" font-size="14" fill="#555">Collateral & covenant management → Finastra</text>
-<rect x="507.0" y="776" width="149.0" height="23" rx="11.5" fill="#7a7a7a" opacity="0.13"/>
-<text x="581.5" y="792" font-size="12.5" font-weight="700" fill="#7a7a7a" text-anchor="middle">○ PEER TEMPLATE</text>
-<rect x="70" y="868" width="600" height="108" rx="13" fill="#ffffff" stroke="#56B4E9" stroke-width="1.8" filter="url(#sh)"/>
-<rect x="70" y="868" width="10" height="108" rx="5" fill="#56B4E9"/>
-<text x="98" y="900" font-size="18" font-weight="700" fill="#111111">5 · Pricing / Terms (risk-based)</text>
-<text x="98" y="927" font-size="15" fill="#1f1f1f">Business Division + Finance</text>
-<text x="98" y="952" font-size="14" fill="#555">Pricing engine inside the origination system</text>
-<rect x="507.0" y="944" width="149.0" height="23" rx="11.5" fill="#7a7a7a" opacity="0.13"/>
-<text x="581.5" y="960" font-size="12.5" font-weight="700" fill="#7a7a7a" text-anchor="middle">○ PEER TEMPLATE</text>
-<rect x="70" y="1036" width="600" height="108" rx="13" fill="#ffffff" stroke="#CC79A7" stroke-width="3.5" filter="url(#sh)"/>
-<rect x="70" y="1036" width="10" height="108" rx="5" fill="#CC79A7"/>
-<text x="98" y="1068" font-size="18" font-weight="700" fill="#111111">6 · Portfolio / SECTOR-CONCENTRATION & limits</text>
-<text x="98" y="1095" font-size="15" fill="#1f1f1f">Risk Management Division (CRO) — Ronen Mori (רונן מורי)</text>
-<text x="98" y="1120" font-size="14" fill="#555">Limits & exposure → portfolio mgmt + risk data warehouse</text>
-<rect x="472.6" y="1112" width="183.4" height="23" rx="11.5" fill="#009E73" opacity="0.13"/>
-<text x="564.3000000000001" y="1128" font-size="12.5" font-weight="700" fill="#009E73" text-anchor="middle">✓ CONFIRMED · LEUMI</text>
-<rect x="70" y="1204" width="600" height="108" rx="13" fill="#ffffff" stroke="#111111" stroke-width="1.8" filter="url(#sh)"/>
-<rect x="70" y="1204" width="10" height="108" rx="5" fill="#111111"/>
-<text x="98" y="1236" font-size="18" font-weight="700" fill="#111111">7 · Credit Committee (decision / conditions)</text>
-<text x="98" y="1263" font-size="15" fill="#1f1f1f">Credit committee → escalates to Risk Div. / mgmt</text>
-<text x="98" y="1288" font-size="14" fill="#555">Workflow + Credit-Memo module</text>
-<rect x="507.0" y="1280" width="149.0" height="23" rx="11.5" fill="#7a7a7a" opacity="0.13"/>
-<text x="581.5" y="1296" font-size="12.5" font-weight="700" fill="#7a7a7a" text-anchor="middle">○ PEER TEMPLATE</text>
-<path d="M 670 418.0 H 708 Q 720 418.0 720 406.0 V 262.0 Q 720 250.0 708 250.0 H 676" fill="none" stroke="#D55E00" stroke-width="2.4" stroke-dasharray="7 5" marker-end="url(#rw)"/>
-<circle cx="720" cy="334.0" r="15" fill="#D55E00"/>
-<text x="720" y="339.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R1</text>
-<text x="742" y="339.0" font-size="12.5" fill="#333">incomplete financials → request more</text>
-<path d="M 670 586.0 H 760 Q 772 586.0 772 574.0 V 430.0 Q 772 418.0 760 418.0 H 676" fill="none" stroke="#D55E00" stroke-width="2.4" stroke-dasharray="7 5" marker-end="url(#rw)"/>
-<circle cx="772" cy="502.0" r="15" fill="#D55E00"/>
-<text x="772" y="507.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R2</text>
-<text x="794" y="507.0" font-size="12.5" fill="#333">AML flag → enhanced due diligence</text>
-<path d="M 670 754.0 H 824 Q 836 754.0 836 742.0 V 430.0 Q 836 418.0 824 418.0 H 676" fill="none" stroke="#D55E00" stroke-width="2.4" stroke-dasharray="7 5" marker-end="url(#rw)"/>
-<circle cx="836" cy="586.0" r="15" fill="#D55E00"/>
-<text x="836" y="591.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R3</text>
-<text x="858" y="591.0" font-size="12.5" fill="#333">collateral defect → re-underwrite</text>
-<path d="M 670 1090.0 H 708 Q 720 1090.0 720 1078.0 V 934.0 Q 720 922.0 708 922.0 H 676" fill="none" stroke="#CC79A7" stroke-width="4" stroke-dasharray="3 4" marker-end="url(#ov)"/>
-<circle cx="720" cy="1006.0" r="15" fill="#CC79A7"/>
-<text x="720" y="1011.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R4</text>
-<text x="742" y="1011.0" font-size="12.5" fill="#333">limit breach → re-price / downsize / decline</text>
-<path d="M 670 1258.0 H 898 Q 910 1258.0 910 1246.0 V 430.0 Q 910 418.0 898 418.0 H 676" fill="none" stroke="#D55E00" stroke-width="2.4" stroke-dasharray="7 5" marker-end="url(#rw)"/>
-<circle cx="910" cy="838.0" r="15" fill="#D55E00"/>
-<text x="910" y="843.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R5</text>
-<text x="932" y="843.0" font-size="12.5" fill="#333">committee returns conditions</text>
-<text x="370.0" y="1356" font-size="15.5" font-weight="700" fill="#0072B2" text-anchor="middle">→ back to Relationship Manager → customer</text>
-<rect x="70" y="1386" width="1100" height="62" rx="10" fill="#eaf7f1" stroke="#009E73" stroke-width="1.5"/>
-<text x="90" y="1411" font-size="13.5" font-weight="700" fill="#0a7a59">✓ Regulatory driver of the concentration step [CONFIRMED · LEUMI]</text>
-<text x="90" y="1433" font-size="13" fill="#0a5e46">Bank of Israel Proper Conduct Directives 311 (credit-risk mgmt) · 313 (single borrower/group limits) · 315.   US OCC 25%-of-capital rule = analogous template.</text>
+<text x="70" y="50" font-size="31" font-weight="700" fill="#111111">Bank Leumi — Commercial Loan Origination</text>
+<text x="70" y="80" font-size="17" fill="#444">Flow · departments · people · systems — an iterative, back-and-forth workflow</text>
+<rect x="70" y="104" width="1160" height="84" rx="9" fill="#f6f6f6" stroke="#d8d8d8"/>
+<line x1="88" y1="128" x2="128" y2="128" stroke="#7a7a7a" stroke-width="3" marker-end="url(#fwd)"/>
+<text x="136" y="133" font-size="13.5" fill="#333">forward step</text>
+<line x1="270" y1="128" x2="310" y2="128" stroke="#D55E00" stroke-width="2.4" stroke-dasharray="7 5" marker-end="url(#rw)"/>
+<text x="318" y="133" font-size="13.5" fill="#333">rework loop (R#)</text>
+<line x1="490" y1="128" x2="530" y2="128" stroke="#CC79A7" stroke-width="4" stroke-dasharray="3 4" marker-end="url(#ov)"/>
+<text x="538" y="133" font-size="13.5" fill="#333">concentration override</text>
+<text x="770" y="133" font-size="13.5" fill="#333">✓ before a person = confirmed for Leumi</text>
+<text x="88" y="162" font-size="13" fill="#333">system status:</text>
+<text x="198" y="162" font-size="14" font-weight="700" fill="#009E73">✓</text>
+<text x="215" y="162" font-size="12.5" fill="#333">SYSTEM CONFIRMED</text>
+<text x="390.4" y="162" font-size="14" font-weight="700" fill="#7a7a7a">○</text>
+<text x="407.4" y="162" font-size="12.5" fill="#333">PEER TEMPLATE</text>
+<text x="557.5999999999999" y="162" font-size="14" font-weight="700" fill="#D55E00">✗</text>
+<text x="574.5999999999999" y="162" font-size="12.5" fill="#333">SYSTEM NOT FOUND</text>
+<text x="88" y="180" font-size="11.5" fill="#666">“Peer template” = how comparable banks do it (nCino/CreditLens/Finastra); not verified for Leumi. “Not found” = no Leumi-specific source.</text>
+<line x1="390.0" y1="326" x2="390.0" y2="380" stroke="#7a7a7a" stroke-width="3" marker-end="url(#fwd)"/>
+<line x1="390.0" y1="496" x2="390.0" y2="550" stroke="#7a7a7a" stroke-width="3" marker-end="url(#fwd)"/>
+<line x1="390.0" y1="666" x2="390.0" y2="720" stroke="#7a7a7a" stroke-width="3" marker-end="url(#fwd)"/>
+<line x1="390.0" y1="836" x2="390.0" y2="890" stroke="#7a7a7a" stroke-width="3" marker-end="url(#fwd)"/>
+<line x1="390.0" y1="1006" x2="390.0" y2="1060" stroke="#7a7a7a" stroke-width="3" marker-end="url(#fwd)"/>
+<line x1="390.0" y1="1176" x2="390.0" y2="1230" stroke="#7a7a7a" stroke-width="3" marker-end="url(#fwd)"/>
+<rect x="70" y="214" width="640" height="112" rx="13" fill="#fff" stroke="#0072B2" stroke-width="1.8" filter="url(#sh)"/>
+<rect x="70" y="214" width="10" height="112" rx="5" fill="#0072B2"/>
+<text x="98" y="245" font-size="18" font-weight="700" fill="#111111">1 · Relationship Manager (intake)</text>
+<text x="98" y="272" font-size="14.5" fill="#1f1f1f"><tspan fill="#009E73" font-weight="700">✓ </tspan>Business / “Corporate” Division — Liat Shov (ליאת שוב)</text>
+<text x="98" y="299" font-size="13.5" fill="#555">CRM → Salesforce</text>
+<rect x="524.8" y="294" width="171.20000000000002" height="23" rx="11.5" fill="#009E73" opacity="0.14"/>
+<text x="610.4" y="310" font-size="12.5" font-weight="700" fill="#009E73" text-anchor="middle">✓ SYSTEM CONFIRMED</text>
+<rect x="70" y="384" width="640" height="112" rx="13" fill="#fff" stroke="#0072B2" stroke-width="1.8" filter="url(#sh)"/>
+<rect x="70" y="384" width="10" height="112" rx="5" fill="#0072B2"/>
+<text x="98" y="415" font-size="18" font-weight="700" fill="#111111">2 · Credit Analyst / Underwriting</text>
+<text x="98" y="442" font-size="14.5" fill="#1f1f1f">Corporate-credit underwriters (Business Division)</text>
+<text x="98" y="469" font-size="13.5" fill="#555">Loan-origination + spreading  (template: nCino · Moody’s CreditLens)</text>
+<rect x="550.0" y="464" width="146.0" height="23" rx="11.5" fill="#7a7a7a" opacity="0.14"/>
+<text x="623.0" y="480" font-size="12.5" font-weight="700" fill="#7a7a7a" text-anchor="middle">○ PEER TEMPLATE</text>
+<rect x="70" y="554" width="640" height="112" rx="13" fill="#fff" stroke="#E69F00" stroke-width="1.8" filter="url(#sh)"/>
+<rect x="70" y="554" width="10" height="112" rx="5" fill="#E69F00"/>
+<text x="98" y="585" font-size="18" font-weight="700" fill="#111111">3 · Fraud & Financial-Crime (AML / KYC)</text>
+<text x="98" y="612" font-size="14.5" fill="#1f1f1f">Compliance & AML function</text>
+<text x="98" y="639" font-size="13.5" fill="#555">Fraud / monitoring → NICE Actimize</text>
+<rect x="524.8" y="634" width="171.20000000000002" height="23" rx="11.5" fill="#009E73" opacity="0.14"/>
+<text x="610.4" y="650" font-size="12.5" font-weight="700" fill="#009E73" text-anchor="middle">✓ SYSTEM CONFIRMED</text>
+<rect x="70" y="724" width="640" height="112" rx="13" fill="#fff" stroke="#E69F00" stroke-width="1.8" filter="url(#sh)"/>
+<rect x="70" y="724" width="10" height="112" rx="5" fill="#E69F00"/>
+<text x="98" y="755" font-size="18" font-weight="700" fill="#111111">4 · Legal — collateral · covenants · docs</text>
+<text x="98" y="782" font-size="14.5" fill="#1f1f1f">Legal / collateral counsel</text>
+<text x="98" y="809" font-size="13.5" fill="#555">Collateral & covenant mgmt  (template: Finastra)</text>
+<rect x="550.0" y="804" width="146.0" height="23" rx="11.5" fill="#7a7a7a" opacity="0.14"/>
+<text x="623.0" y="820" font-size="12.5" font-weight="700" fill="#7a7a7a" text-anchor="middle">○ PEER TEMPLATE</text>
+<rect x="70" y="894" width="640" height="112" rx="13" fill="#fff" stroke="#56B4E9" stroke-width="1.8" filter="url(#sh)"/>
+<rect x="70" y="894" width="10" height="112" rx="5" fill="#56B4E9"/>
+<text x="98" y="925" font-size="18" font-weight="700" fill="#111111">5 · Pricing / Terms (risk-based)</text>
+<text x="98" y="952" font-size="14.5" fill="#1f1f1f">Business Division + Finance</text>
+<text x="98" y="979" font-size="13.5" fill="#555">Pricing engine inside the origination system</text>
+<rect x="550.0" y="974" width="146.0" height="23" rx="11.5" fill="#7a7a7a" opacity="0.14"/>
+<text x="623.0" y="990" font-size="12.5" font-weight="700" fill="#7a7a7a" text-anchor="middle">○ PEER TEMPLATE</text>
+<rect x="70" y="1064" width="640" height="112" rx="13" fill="#fff" stroke="#CC79A7" stroke-width="3.5" filter="url(#sh)"/>
+<rect x="70" y="1064" width="10" height="112" rx="5" fill="#CC79A7"/>
+<text x="98" y="1095" font-size="18" font-weight="700" fill="#111111">6 · Portfolio / SECTOR-CONCENTRATION & limits</text>
+<text x="98" y="1122" font-size="14.5" fill="#1f1f1f"><tspan fill="#009E73" font-weight="700">✓ </tspan>Risk Management Division (CRO) — Ronen Mori (רונן מורי)</text>
+<text x="98" y="1149" font-size="13.5" fill="#555">Limits & exposure + data warehouse</text>
+<rect x="524.8" y="1144" width="171.20000000000002" height="23" rx="11.5" fill="#D55E00" opacity="0.14"/>
+<text x="610.4" y="1160" font-size="12.5" font-weight="700" fill="#D55E00" text-anchor="middle">✗ SYSTEM NOT FOUND</text>
+<rect x="70" y="1234" width="640" height="112" rx="13" fill="#fff" stroke="#111111" stroke-width="1.8" filter="url(#sh)"/>
+<rect x="70" y="1234" width="10" height="112" rx="5" fill="#111111"/>
+<text x="98" y="1265" font-size="18" font-weight="700" fill="#111111">7 · Credit Committee (decision / conditions)</text>
+<text x="98" y="1292" font-size="14.5" fill="#1f1f1f">Credit committee → escalates to Risk Div. / mgmt</text>
+<text x="98" y="1319" font-size="13.5" fill="#555">Workflow + Credit-Memo module</text>
+<rect x="550.0" y="1314" width="146.0" height="23" rx="11.5" fill="#7a7a7a" opacity="0.14"/>
+<text x="623.0" y="1330" font-size="12.5" font-weight="700" fill="#7a7a7a" text-anchor="middle">○ PEER TEMPLATE</text>
+<path d="M 710 440.0 H 760 Q 772 440.0 772 428.0 V 282.0 Q 772 270.0 760 270.0 H 716" fill="none" stroke="#D55E00" stroke-width="2.4" stroke-dasharray="7 5" marker-end="url(#rw)"/>
+<circle cx="772" cy="355.0" r="15" fill="#D55E00"/>
+<text x="772" y="360.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R1</text>
+<text x="794" y="360.0" font-size="12.5" fill="#333">incomplete financials → request more</text>
+<path d="M 710 610.0 H 812 Q 824 610.0 824 598.0 V 452.0 Q 824 440.0 812 440.0 H 716" fill="none" stroke="#D55E00" stroke-width="2.4" stroke-dasharray="7 5" marker-end="url(#rw)"/>
+<circle cx="824" cy="525.0" r="15" fill="#D55E00"/>
+<text x="824" y="530.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R2</text>
+<text x="846" y="530.0" font-size="12.5" fill="#333">AML flag → enhanced due diligence</text>
+<path d="M 710 780.0 H 876 Q 888 780.0 888 768.0 V 452.0 Q 888 440.0 876 440.0 H 716" fill="none" stroke="#D55E00" stroke-width="2.4" stroke-dasharray="7 5" marker-end="url(#rw)"/>
+<circle cx="888" cy="610.0" r="15" fill="#D55E00"/>
+<text x="888" y="615.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R3</text>
+<text x="910" y="615.0" font-size="12.5" fill="#333">collateral defect → re-underwrite</text>
+<path d="M 710 1120.0 H 760 Q 772 1120.0 772 1108.0 V 962.0 Q 772 950.0 760 950.0 H 716" fill="none" stroke="#CC79A7" stroke-width="4" stroke-dasharray="3 4" marker-end="url(#ov)"/>
+<circle cx="772" cy="1035.0" r="15" fill="#CC79A7"/>
+<text x="772" y="1040.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R4</text>
+<text x="794" y="1040.0" font-size="12.5" fill="#333">limit breach → re-price / downsize / decline</text>
+<path d="M 710 1290.0 H 950 Q 962 1290.0 962 1278.0 V 452.0 Q 962 440.0 950 440.0 H 716" fill="none" stroke="#D55E00" stroke-width="2.4" stroke-dasharray="7 5" marker-end="url(#rw)"/>
+<circle cx="962" cy="865.0" r="15" fill="#D55E00"/>
+<text x="962" y="870.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R5</text>
+<text x="984" y="870.0" font-size="12.5" fill="#333">committee returns conditions</text>
+<text x="390.0" y="1388" font-size="15.5" font-weight="700" fill="#0072B2" text-anchor="middle">→ back to Relationship Manager → customer</text>
+<rect x="70" y="1412" width="1160" height="96" rx="10" fill="#eef7fb" stroke="#0072B2" stroke-width="1.6"/>
+<text x="88" y="1437" font-size="14.5" font-weight="700" fill="#0a5a86">✓ Confirmed infrastructure layer (verified for Leumi)</text>
+<rect x="88" y="1441" width="112.0" height="23" rx="11.5" fill="#ffffff" stroke="#0072B2" stroke-width="1"/>
+<text x="144.0" y="1457" font-size="12.5" fill="#0a5a86" text-anchor="middle">AWS (cloud)</text>
+<rect x="210.0" y="1441" width="224.0" height="23" rx="11.5" fill="#ffffff" stroke="#0072B2" stroke-width="1"/>
+<text x="322.0" y="1457" font-size="12.5" fill="#0a5a86" text-anchor="middle">Amazon EKS / EKS Anywhere</text>
+<rect x="444.0" y="1441" width="128.0" height="23" rx="11.5" fill="#ffffff" stroke="#0072B2" stroke-width="1"/>
+<text x="508.0" y="1457" font-size="12.5" fill="#0a5a86" text-anchor="middle">Amazon Aurora</text>
+<rect x="582.0" y="1441" width="240.0" height="23" rx="11.5" fill="#ffffff" stroke="#0072B2" stroke-width="1"/>
+<text x="702.0" y="1457" font-size="12.5" fill="#0a5a86" text-anchor="middle">AllCloud (delivery partner)</text>
+<rect x="832.0" y="1441" width="232.0" height="23" rx="11.5" fill="#ffffff" stroke="#0072B2" stroke-width="1"/>
+<text x="948.0" y="1457" font-size="12.5" fill="#0a5a86" text-anchor="middle">GFT → FinTeka open banking</text>
+<rect x="88" y="1471" width="296.0" height="23" rx="11.5" fill="#ffffff" stroke="#0072B2" stroke-width="1"/>
+<text x="236.0" y="1487" font-size="12.5" fill="#0a5a86" text-anchor="middle">Temenos → Pepper digital bank only</text>
+<text x="88" y="1502" font-size="11.5" fill="#b25a00">✗ Not found (insider-only): main commercial core · loan/credit system (מערכת אשראי) · credit-rating engine · enterprise data warehouse — Leumi is building a future cloud-native core via a new subsidiary.</text>
+<rect x="70" y="1522" width="1160" height="60" rx="10" fill="#eaf7f1" stroke="#009E73" stroke-width="1.5"/>
+<text x="88" y="1546" font-size="13.5" font-weight="700" fill="#0a7a59">✓ Regulatory driver of the concentration step [CONFIRMED · LEUMI]</text>
+<text x="88" y="1568" font-size="13" fill="#0a5e46">Bank of Israel Proper Conduct Directives 311 (credit-risk mgmt) · 313 (single borrower/group limits) · 315.   US OCC 25%-of-capital rule = analogous template.</text>
 </svg>
