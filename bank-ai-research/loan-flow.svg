@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1430" viewBox="0 0 1180 1430" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1180" height="1430" fill="#f8fafc"/>
+<defs>
+<marker id="fwd" markerWidth="11" markerHeight="11" refX="8" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#94a3b8"/></marker>
+<marker id="back" markerWidth="11" markerHeight="11" refX="8" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#ef4444"/></marker>
+<marker id="back2" markerWidth="11" markerHeight="11" refX="8" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#9333ea"/></marker>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.18"/></filter>
+</defs>
+<text x="70" y="54" font-size="30" font-weight="700" fill="#0f172a">Bank Leumi — Commercial Loan Origination</text>
+<text x="70" y="84" font-size="17" fill="#475569">A multi-department, back-and-forth workflow · roles · people · systems</text>
+<text x="70" y="112" font-size="14" fill="#64748b">Solid grey = forward flow   ·   Dashed red = rework loop   ·   Dashed purple = concentration override</text>
+<line x1="350.0" y1="254" x2="350.0" y2="308" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#fwd)"/>
+<line x1="350.0" y1="416" x2="350.0" y2="470" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#fwd)"/>
+<line x1="350.0" y1="578" x2="350.0" y2="632" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#fwd)"/>
+<line x1="350.0" y1="740" x2="350.0" y2="794" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#fwd)"/>
+<line x1="350.0" y1="902" x2="350.0" y2="956" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#fwd)"/>
+<line x1="350.0" y1="1064" x2="350.0" y2="1118" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#fwd)"/>
+<rect x="70" y="150" width="560" height="104" rx="13" fill="#ffffff" stroke="#2563eb" stroke-width="2" filter="url(#sh)"/>
+<rect x="70" y="150" width="9" height="104" rx="4" fill="#2563eb"/>
+<text x="96" y="180" font-size="17.5" font-weight="700" fill="#0f172a">1 · Relationship Manager (intake)</text>
+<text x="96" y="206" font-size="14.5" fill="#1e293b">Business / “Corporate” Division — Liat Shov (ליאת שוב)</text>
+<text x="96" y="230" font-size="13.5" fill="#475569">CRM → Salesforce</text>
+<rect x="429" y="224" width="187" height="21" rx="10.5" fill="#16a34a" opacity="0.14"/>
+<text x="522.5" y="239" font-size="11.5" font-weight="700" fill="#16a34a" text-anchor="middle">CONFIRMED-LEUMI</text>
+<rect x="70" y="312" width="560" height="104" rx="13" fill="#ffffff" stroke="#4f46e5" stroke-width="2" filter="url(#sh)"/>
+<rect x="70" y="312" width="9" height="104" rx="4" fill="#4f46e5"/>
+<text x="96" y="342" font-size="17.5" font-weight="700" fill="#0f172a">2 · Credit Analyst / Underwriting</text>
+<text x="96" y="368" font-size="14.5" fill="#1e293b">Corporate-credit underwriters (Business Division)</text>
+<text x="96" y="392" font-size="13.5" fill="#475569">LOS + spreading → nCino · Moody’s CreditLens · SAS</text>
+<rect x="506" y="386" width="110" height="21" rx="10.5" fill="#64748b" opacity="0.14"/>
+<text x="561.0" y="401" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">TEMPLATE</text>
+<rect x="70" y="474" width="560" height="104" rx="13" fill="#ffffff" stroke="#dc2626" stroke-width="2" filter="url(#sh)"/>
+<rect x="70" y="474" width="9" height="104" rx="4" fill="#dc2626"/>
+<text x="96" y="504" font-size="17.5" font-weight="700" fill="#0f172a">3 · Fraud & Financial-Crime (AML / KYC)</text>
+<text x="96" y="530" font-size="14.5" fill="#1e293b">Compliance & AML function  —  incumbent not named</text>
+<text x="96" y="554" font-size="13.5" fill="#475569">AML / monitoring → NICE Actimize (fraud)</text>
+<rect x="539" y="548" width="77" height="21" rx="10.5" fill="#d97706" opacity="0.14"/>
+<text x="577.5" y="563" font-size="11.5" font-weight="700" fill="#d97706" text-anchor="middle">MIXED</text>
+<rect x="70" y="636" width="560" height="104" rx="13" fill="#ffffff" stroke="#b45309" stroke-width="2" filter="url(#sh)"/>
+<rect x="70" y="636" width="9" height="104" rx="4" fill="#b45309"/>
+<text x="96" y="666" font-size="17.5" font-weight="700" fill="#0f172a">4 · Legal (collateral · covenants · docs)</text>
+<text x="96" y="692" font-size="14.5" fill="#1e293b">Legal / collateral counsel</text>
+<text x="96" y="716" font-size="13.5" fill="#475569">Collateral & covenant mgmt → Finastra</text>
+<rect x="506" y="710" width="110" height="21" rx="10.5" fill="#64748b" opacity="0.14"/>
+<text x="561.0" y="725" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">TEMPLATE</text>
+<rect x="70" y="798" width="560" height="104" rx="13" fill="#ffffff" stroke="#0d9488" stroke-width="2" filter="url(#sh)"/>
+<rect x="70" y="798" width="9" height="104" rx="4" fill="#0d9488"/>
+<text x="96" y="828" font-size="17.5" font-weight="700" fill="#0f172a">5 · Pricing / Terms (risk-based)</text>
+<text x="96" y="854" font-size="14.5" fill="#1e293b">Business Division + Finance</text>
+<text x="96" y="878" font-size="13.5" fill="#475569">Pricing engine inside LOS (nCino / CreditLens)</text>
+<rect x="506" y="872" width="110" height="21" rx="10.5" fill="#64748b" opacity="0.14"/>
+<text x="561.0" y="887" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">TEMPLATE</text>
+<rect x="70" y="960" width="560" height="104" rx="13" fill="#ffffff" stroke="#7c3aed" stroke-width="3.5" filter="url(#sh)"/>
+<rect x="70" y="960" width="9" height="104" rx="4" fill="#7c3aed"/>
+<text x="96" y="990" font-size="17.5" font-weight="700" fill="#0f172a">6 · Portfolio / SECTOR-CONCENTRATION & limits</text>
+<text x="96" y="1016" font-size="14.5" fill="#1e293b">Risk Management Division (CRO) — Ronen Mori (רונן מורי)</text>
+<text x="96" y="1040" font-size="13.5" fill="#475569">Limits & exposure → portfolio mgmt + risk DWH</text>
+<rect x="429" y="1034" width="187" height="21" rx="10.5" fill="#16a34a" opacity="0.14"/>
+<text x="522.5" y="1049" font-size="11.5" font-weight="700" fill="#16a34a" text-anchor="middle">CONFIRMED-LEUMI</text>
+<rect x="70" y="1122" width="560" height="104" rx="13" fill="#ffffff" stroke="#334155" stroke-width="2" filter="url(#sh)"/>
+<rect x="70" y="1122" width="9" height="104" rx="4" fill="#334155"/>
+<text x="96" y="1152" font-size="17.5" font-weight="700" fill="#0f172a">7 · Credit Committee (decision / conditions)</text>
+<text x="96" y="1178" font-size="14.5" fill="#1e293b">Credit committee → escalates to Risk Div. / mgmt</text>
+<text x="96" y="1202" font-size="13.5" fill="#475569">Workflow + Credit Memo module</text>
+<rect x="506" y="1196" width="110" height="21" rx="10.5" fill="#64748b" opacity="0.14"/>
+<text x="561.0" y="1211" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">TEMPLATE</text>
+<path d="M 630 364.0 H 678 Q 690 364.0 690 352.0 V 214.0 Q 690 202.0 678 202.0 H 636" fill="none" stroke="#ef4444" stroke-width="2.3" stroke-dasharray="7 5" marker-end="url(#back)"/>
+<circle cx="690" cy="283.0" r="15" fill="#ef4444"/>
+<text x="690" y="288.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R1</text>
+<text x="712" y="288.0" font-size="12.5" fill="#334155">needs more financials</text>
+<path d="M 630 526.0 H 728 Q 740 526.0 740 514.0 V 376.0 Q 740 364.0 728 364.0 H 636" fill="none" stroke="#ef4444" stroke-width="2.3" stroke-dasharray="7 5" marker-end="url(#back)"/>
+<circle cx="740" cy="445.0" r="15" fill="#ef4444"/>
+<text x="740" y="450.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R2</text>
+<text x="762" y="450.0" font-size="12.5" fill="#334155">AML flag → EDD</text>
+<path d="M 630 688.0 H 788 Q 800 688.0 800 676.0 V 376.0 Q 800 364.0 788 364.0 H 636" fill="none" stroke="#ef4444" stroke-width="2.3" stroke-dasharray="7 5" marker-end="url(#back)"/>
+<circle cx="800" cy="526.0" r="15" fill="#ef4444"/>
+<text x="800" y="531.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R3</text>
+<text x="822" y="531.0" font-size="12.5" fill="#334155">collateral defect → re-underwrite</text>
+<path d="M 630 1012.0 H 678 Q 690 1012.0 690 1000.0 V 862.0 Q 690 850.0 678 850.0 H 636" fill="none" stroke="#9333ea" stroke-width="2.3" stroke-dasharray="7 5" marker-end="url(#back2)"/>
+<circle cx="690" cy="931.0" r="15" fill="#9333ea"/>
+<text x="690" y="936.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R4</text>
+<text x="712" y="936.0" font-size="12.5" fill="#334155">limit breach → re-price / downsize / decline</text>
+<path d="M 630 1174.0 H 858 Q 870 1174.0 870 1162.0 V 376.0 Q 870 364.0 858 364.0 H 636" fill="none" stroke="#ef4444" stroke-width="2.3" stroke-dasharray="7 5" marker-end="url(#back)"/>
+<circle cx="870" cy="769.0" r="15" fill="#ef4444"/>
+<text x="870" y="774.0" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">R5</text>
+<text x="892" y="774.0" font-size="12.5" fill="#334155">committee returns conditions</text>
+<text x="350.0" y="1272" font-size="15" font-weight="700" fill="#2563eb" text-anchor="middle">→ back to Relationship Manager → customer</text>
+<rect x="70" y="1308" width="1040" height="58" rx="10" fill="#ecfdf5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="90" y="1332" font-size="13.5" font-weight="700" fill="#15803d">Regulatory driver of the concentration step [CONFIRMED-LEUMI]:</text>
+<text x="90" y="1353" font-size="13" fill="#166534">Bank of Israel Proper Conduct Directives 311 (credit-risk mgmt) · 313 (single borrower/group limits) · 315. (US OCC 25%-of-capital rule is an analogous template.)</text>
+</svg>
