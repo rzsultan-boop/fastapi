@@ -112,24 +112,44 @@ auto-spreading, early concentration simulation) so deals don't ricochet.
 |---|---|---|---|
 | **Chief Risk Officer** | Risk Management Division (ראש חטיבת ניהול סיכונים) | **Ronen Mori** (רונן מורי), since Jan 2023 (prev: Liat Shov 2020–23; Bosmat Ben-Tzvi before) | **[CONFIRMED-LEUMI / HIGH]** |
 | **Head of Corporate/Commercial Credit** | Business / "Corporate" Division (ראש החטיבה העסקית) | **Liat Shov** (ליאת שוב), since Jan 2023 (prev: Ronen Agassi → left to CEO Migdal) | **[CONFIRMED-LEUMI / HIGH]** |
-| **CIO / Head of Technology** | Technology Division (חטיבת טכנולוגיות) | **Chaim Skolnik** (חיים שקולניק), named Dec 2020 from Cyber — ⚠️ 2026 tenure not re-confirmed | **[CONFIRMED-LEUMI / MED]** |
-| **CDO** | (Data) | **Tal Homsky** (טל חומסקי) — from prior mapping | **[carried over]** |
-| Head of Compliance & AML | Compliance & AML (ציות ואיסור הלבנת הון) | — | **[GAP]** |
-| CISO | Cyber/Infosec | — | **[GAP]** |
+| **CIO / Head of Technology** | ⚠️ **role no longer exists** — the Technology Division was **split in two** (CEO Hanan Friedman) | see two rows below | **[CONFIRMED-LEUMI / HIGH]** |
+| → Cyber & Infrastructure Division | cyber + cloud infra + CTO function | **Nir Omer** (ניר עומר), SVP & board member | **[CONFIRMED-LEUMI / HIGH]** |
+| → Technological Development Division | core dev / build | **Shauli Bar Or** (שאולי בר אור), SVP & board member | **[CONFIRMED-LEUMI / HIGH]** |
+| **CDO** | (Data) | **Tal Homsky** (טל חומסקי) — from prior mapping; not re-confirmed this round | **[carried over]** |
+| Head of Compliance & AML | Compliance & AML (ציות ואיסור הלבנת הון) | **Dr. Nir Yamin** (ד״ר ניר ימין) named chief compliance officer ~Mar 2026 (also dep. head, Legal Advice); prev. Pini Shatz | **[LEAD / UNVERIFIED]** |
+| CISO | Cyber & Infrastructure Div. | likely under **Nir Omer**; older infosec head Moshe First (משה פירסט) | **[LEAD / UNVERIFIED]** |
 
-Context: CEO **Hanan Friedman** reshuffled 6 of 12 division heads in Dec 2020 (all internal
-promotions), which is why several of these chairs turned over in 2020–2023. **[CONFIRMED-LEUMI]**
+Context: CEO **Hanan Friedman** reshuffled division heads (Dec 2020), then **split the Technology
+Division** (~Dec 2023) into the **Cyber & Infrastructure Division** (Nir Omer) and the **Technological
+Development Division** (Shauli Bar Or), eliminating the single CIO role. Former tech head **Chaim
+Skolnik** moved to **CEO of a new wholly-owned Leumi subsidiary building the bank's future core-banking
+systems**; **Eyal Efrat** (איל אפרת), a prior tech-division head, became **Head of the Banking
+(retail) Division**. **[CONFIRMED-LEUMI]**
 
 ---
 
+## 5b. Systems — confirmed status for Leumi (PRIORITY)
+
+| Category | Leumi status | Tag |
+|---|---|---|
+| CRM | **Salesforce** | [CONFIRMED-LEUMI] |
+| AML / fraud | **NICE Actimize** (fraud / transaction-monitoring; "AML" framing unproven) | [CONFIRMED-LEUMI] |
+| Core banking | **Temenos** — confirmed **only for the *Pepper* digital bank** (+ VMware cloud, 2017); **NOT** confirmed for the main commercial core. Leumi is building a **future core via a new wholly-owned subsidiary** (Skolnik, CEO). | [CONFIRMED-LEUMI, scoped] |
+| Credit rating / scoring | **SAS — REFUTED** (0-3; the SAS case-study attribution did not hold). No engine confirmed. | [NOT FOUND] |
+| Loan-origination (LOS) | none confirmed (templates: nCino / Finastra) | [NOT FOUND] |
+| Limits & collateral | none confirmed | [NOT FOUND] |
+| Data warehouse / BI | none confirmed (Teradata/Oracle/SAS unverified) | [NOT FOUND] |
+
+> ⚠️ **The priority systems-mining pass (employee-profile + job-ad mining) returned no results — it was
+> killed by a session limit (resets 7:40pm UTC). Re-run needed: run ID `wf_a3537b79-88f`.** The main
+> commercial-core, LOS, rating engine, and data-warehouse vendors are still open.
+
 ## 6. Open questions / next research
-- Current (2026) Leumi **CIO** confirmation (Skolnik is Dec-2020-vintage).
-- Named Leumi **Head of Compliance/AML**, **CISO**, **Head of Financial Crime**.
-- Confirm **Tal Homsky / CDO** against a current Leumi periodic report and where the CDO sits vs
-  Technology and Risk.
-- Which **LOS / rating / limits** vendors Leumi *actually* runs beyond confirmed Salesforce + Actimize
-  (nCino? Finastra? Temenos? FIS? Moody's? in-house core-native?). **None of the system-template
-  vendors are confirmed for Leumi.**
+- **[PRIORITY] Re-run the systems-mining pass** after the 7:40pm-UTC session-limit reset (mine
+  current/former Leumi employee LinkedIn skills + job ads for named systems).
+- Confirm **commercial core-banking** platform (vs Temenos-for-Pepper) and the **future-core subsidiary**'s stack.
+- Confirm **CDO Tal Homsky** against a current periodic report; verify **Compliance/AML head (Dr. Nir
+  Yamin?)** and **CISO** leads.
 
 ---
 

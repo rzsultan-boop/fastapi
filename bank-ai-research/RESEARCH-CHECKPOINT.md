@@ -99,17 +99,21 @@ Each step to be annotated with: system (tagged template vs confirmed) + Leumi ro
 plugs into. Personnel names are secondary. Technique to find systems: mine current/former Leumi
 employees' LinkedIn/CV/skills + Leumi job postings (people & job ads name the exact systems).
 
-## PENDING / IN-FLIGHT — two passes (recover if window closed mid-run)
-**When EITHER lands: fold confirmed SYSTEMS (priority) + any names into `LEUMI-loan-origination-usecase.md`
-AND the diagram (`make_flow.py`), then commit + push immediately.**
+## STATUS 2026-06-26 ~18:15 UTC — both passes hit SESSION LIMIT (resets 7:40pm UTC)
+- **Org-gaps pass** `wf_a425e9bb-3c2` (w2ub8bd4z): **partial success** — confirmed findings folded into
+  use-case doc §5/§5b (Tech Division split → Nir Omer + Shauli Bar Or; Skolnik → core-banking
+  subsidiary CEO; Temenos confirmed for *Pepper* only; SAS credit-rating **refuted**).
+- **Systems-mining pass (PRIORITY)** `wf_a3537b79-88f` (w7varnj04): **FAILED — 0 results** (killed during
+  fetch by the session limit). **MUST RE-RUN after 7:40pm UTC.** This is the top open item — the
+  commercial core, LOS, credit-rating engine, and data-warehouse vendors are still unknown.
 
-- **Systems-mining (PRIORITY)** — run ID `wf_a3537b79-88f` (task w7varnj04). Reverse-engineers Leumi's
-  actual stack (core banking, LOS, credit-rating, AML, data warehouse/BI, middleware, cloud, ECM) from
-  employee profiles + job ads. Confirmed so far: Salesforce CRM, NICE Actimize (fraud).
-- **Org gaps** — run ID `wf_a425e9bb-3c2` (task w2ub8bd4z). Open: current CIO (Skolnik?), Head of
-  Compliance/AML, CISO, Tal Homsky/CDO confirmation, + vendor systems.
-- Resume same-session: `Workflow({name:"deep-research", resumeFromRunId:"<id>"})`. New session: re-run a
-  deep-research pass from the specs above.
+### TO RESUME (after 7:40pm UTC reset)
+Re-launch the systems-mining mission (employee-profile + job-ad mining for named systems). Spec is in
+the git history (commit "prioritize systems-over-names") / the w7varnj04 prompt. Then fold confirmed
+SYSTEMS into `LEUMI-loan-origination-usecase.md` §5b AND `make_flow.py`, commit + push.
+
+### Confirmed systems so far (use-case doc §5b has the table)
+Salesforce CRM ✓ · NICE Actimize (fraud) ✓ · Temenos (Pepper digital bank only) ✓ · SAS credit-rating ✗ refuted · everything else NOT FOUND.
 
 ## Workflow recovery (completed runs)
 - Pass 1 (Leumi-direct): run ID `wf_6ef6496b-d83` — completed; synthesis stubbed but verified claims recovered.
